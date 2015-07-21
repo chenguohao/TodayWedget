@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23E695381B5D21E1007F6A9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E695371B5D21E1007F6A9F /* main.m */; };
+		23E6953B1B5D21E1007F6A9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6953A1B5D21E1007F6A9F /* AppDelegate.m */; };
+		23E6953E1B5D21E1007F6A9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6953D1B5D21E1007F6A9F /* ViewController.m */; };
+		23E695411B5D21E1007F6A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E6953F1B5D21E1007F6A9F /* Main.storyboard */; };
+		23E695431B5D21E1007F6A9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E695421B5D21E1007F6A9F /* Images.xcassets */; };
+		23E695461B5D21E1007F6A9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E695441B5D21E1007F6A9F /* LaunchScreen.xib */; };
+		23E695521B5D21E1007F6A9F /* wormholeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E695511B5D21E1007F6A9F /* wormholeTests.m */; };
+		23E695631B5DEB1B007F6A9F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E695621B5DEB1B007F6A9F /* NotificationCenter.framework */; };
+		23E695691B5DEB1B007F6A9F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E695681B5DEB1B007F6A9F /* TodayViewController.m */; };
+		23E6956B1B5DEB1B007F6A9F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E6956A1B5DEB1B007F6A9F /* MainInterface.storyboard */; };
+		23E6956E1B5DEB1B007F6A9F /* wormToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 23E695601B5DEB1A007F6A9F /* wormToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23E6954C1B5D21E1007F6A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23E6952A1B5D21E1007F6A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23E695311B5D21E1007F6A9F;
+			remoteInfo = wormhole;
+		};
+		23E6956C1B5DEB1B007F6A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23E6952A1B5D21E1007F6A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23E6955F1B5DEB1A007F6A9F;
+			remoteInfo = wormToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23E695721B5DEB1B007F6A9F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				23E6956E1B5DEB1B007F6A9F /* wormToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E695981B5E389D007F6A9F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		23E695321B5D21E1007F6A9F /* wormhole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wormhole.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23E695361B5D21E1007F6A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23E695371B5D21E1007F6A9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23E695391B5D21E1007F6A9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		23E6953A1B5D21E1007F6A9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		23E6953C1B5D21E1007F6A9F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		23E6953D1B5D21E1007F6A9F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		23E695401B5D21E1007F6A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23E695421B5D21E1007F6A9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		23E695451B5D21E1007F6A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		23E6954B1B5D21E1007F6A9F /* wormholeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wormholeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23E695501B5D21E1007F6A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23E695511B5D21E1007F6A9F /* wormholeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wormholeTests.m; sourceTree = "<group>"; };
+		23E6955B1B5D2200007F6A9F /* wormhole.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = wormhole.entitlements; sourceTree = "<group>"; };
+		23E695601B5DEB1A007F6A9F /* wormToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = wormToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		23E695621B5DEB1B007F6A9F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		23E695661B5DEB1B007F6A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23E695671B5DEB1B007F6A9F /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		23E695681B5DEB1B007F6A9F /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		23E6956A1B5DEB1B007F6A9F /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		23E695731B5DEB35007F6A9F /* wormToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = wormToday.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23E6952F1B5D21E1007F6A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E695481B5D21E1007F6A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E6955D1B5DEB1A007F6A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E695631B5DEB1B007F6A9F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23E695291B5D21E1007F6A9F = {
+			isa = PBXGroup;
+			children = (
+				23E695341B5D21E1007F6A9F /* wormhole */,
+				23E6954E1B5D21E1007F6A9F /* wormholeTests */,
+				23E695641B5DEB1B007F6A9F /* wormToday */,
+				23E695611B5DEB1B007F6A9F /* Frameworks */,
+				23E695331B5D21E1007F6A9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23E695331B5D21E1007F6A9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23E695321B5D21E1007F6A9F /* wormhole.app */,
+				23E6954B1B5D21E1007F6A9F /* wormholeTests.xctest */,
+				23E695601B5DEB1A007F6A9F /* wormToday.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23E695341B5D21E1007F6A9F /* wormhole */ = {
+			isa = PBXGroup;
+			children = (
+				23E6955B1B5D2200007F6A9F /* wormhole.entitlements */,
+				23E695391B5D21E1007F6A9F /* AppDelegate.h */,
+				23E6953A1B5D21E1007F6A9F /* AppDelegate.m */,
+				23E6953C1B5D21E1007F6A9F /* ViewController.h */,
+				23E6953D1B5D21E1007F6A9F /* ViewController.m */,
+				23E6953F1B5D21E1007F6A9F /* Main.storyboard */,
+				23E695421B5D21E1007F6A9F /* Images.xcassets */,
+				23E695441B5D21E1007F6A9F /* LaunchScreen.xib */,
+				23E695351B5D21E1007F6A9F /* Supporting Files */,
+			);
+			path = wormhole;
+			sourceTree = "<group>";
+		};
+		23E695351B5D21E1007F6A9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23E695361B5D21E1007F6A9F /* Info.plist */,
+				23E695371B5D21E1007F6A9F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23E6954E1B5D21E1007F6A9F /* wormholeTests */ = {
+			isa = PBXGroup;
+			children = (
+				23E695511B5D21E1007F6A9F /* wormholeTests.m */,
+				23E6954F1B5D21E1007F6A9F /* Supporting Files */,
+			);
+			path = wormholeTests;
+			sourceTree = "<group>";
+		};
+		23E6954F1B5D21E1007F6A9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23E695501B5D21E1007F6A9F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23E695611B5DEB1B007F6A9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23E695621B5DEB1B007F6A9F /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23E695641B5DEB1B007F6A9F /* wormToday */ = {
+			isa = PBXGroup;
+			children = (
+				23E695731B5DEB35007F6A9F /* wormToday.entitlements */,
+				23E695671B5DEB1B007F6A9F /* TodayViewController.h */,
+				23E695681B5DEB1B007F6A9F /* TodayViewController.m */,
+				23E6956A1B5DEB1B007F6A9F /* MainInterface.storyboard */,
+				23E695651B5DEB1B007F6A9F /* Supporting Files */,
+			);
+			path = wormToday;
+			sourceTree = "<group>";
+		};
+		23E695651B5DEB1B007F6A9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23E695661B5DEB1B007F6A9F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23E695311B5D21E1007F6A9F /* wormhole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E695551B5D21E1007F6A9F /* Build configuration list for PBXNativeTarget "wormhole" */;
+			buildPhases = (
+				23E6952E1B5D21E1007F6A9F /* Sources */,
+				23E6952F1B5D21E1007F6A9F /* Frameworks */,
+				23E695301B5D21E1007F6A9F /* Resources */,
+				23E695721B5DEB1B007F6A9F /* Embed App Extensions */,
+				23E695981B5E389D007F6A9F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23E6956D1B5DEB1B007F6A9F /* PBXTargetDependency */,
+			);
+			name = wormhole;
+			productName = wormhole;
+			productReference = 23E695321B5D21E1007F6A9F /* wormhole.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23E6954A1B5D21E1007F6A9F /* wormholeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E695581B5D21E1007F6A9F /* Build configuration list for PBXNativeTarget "wormholeTests" */;
+			buildPhases = (
+				23E695471B5D21E1007F6A9F /* Sources */,
+				23E695481B5D21E1007F6A9F /* Frameworks */,
+				23E695491B5D21E1007F6A9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23E6954D1B5D21E1007F6A9F /* PBXTargetDependency */,
+			);
+			name = wormholeTests;
+			productName = wormholeTests;
+			productReference = 23E6954B1B5D21E1007F6A9F /* wormholeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23E6955F1B5DEB1A007F6A9F /* wormToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E6956F1B5DEB1B007F6A9F /* Build configuration list for PBXNativeTarget "wormToday" */;
+			buildPhases = (
+				23E6955C1B5DEB1A007F6A9F /* Sources */,
+				23E6955D1B5DEB1A007F6A9F /* Frameworks */,
+				23E6955E1B5DEB1A007F6A9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wormToday;
+			productName = wormToday;
+			productReference = 23E695601B5DEB1A007F6A9F /* wormToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23E6952A1B5D21E1007F6A9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = guohao;
+				TargetAttributes = {
+					23E695311B5D21E1007F6A9F = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = G5YJVZL9SU;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					23E6954A1B5D21E1007F6A9F = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 23E695311B5D21E1007F6A9F;
+					};
+					23E6955F1B5DEB1A007F6A9F = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = G5YJVZL9SU;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 23E6952D1B5D21E1007F6A9F /* Build configuration list for PBXProject "wormhole" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23E695291B5D21E1007F6A9F;
+			productRefGroup = 23E695331B5D21E1007F6A9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23E695311B5D21E1007F6A9F /* wormhole */,
+				23E6954A1B5D21E1007F6A9F /* wormholeTests */,
+				23E6955F1B5DEB1A007F6A9F /* wormToday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23E695301B5D21E1007F6A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E695411B5D21E1007F6A9F /* Main.storyboard in Resources */,
+				23E695461B5D21E1007F6A9F /* LaunchScreen.xib in Resources */,
+				23E695431B5D21E1007F6A9F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E695491B5D21E1007F6A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E6955E1B5DEB1A007F6A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E6956B1B5DEB1B007F6A9F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23E6952E1B5D21E1007F6A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E6953E1B5D21E1007F6A9F /* ViewController.m in Sources */,
+				23E6953B1B5D21E1007F6A9F /* AppDelegate.m in Sources */,
+				23E695381B5D21E1007F6A9F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E695471B5D21E1007F6A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E695521B5D21E1007F6A9F /* wormholeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E6955C1B5DEB1A007F6A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E695691B5DEB1B007F6A9F /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23E6954D1B5D21E1007F6A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23E695311B5D21E1007F6A9F /* wormhole */;
+			targetProxy = 23E6954C1B5D21E1007F6A9F /* PBXContainerItemProxy */;
+		};
+		23E6956D1B5DEB1B007F6A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23E6955F1B5DEB1A007F6A9F /* wormToday */;
+			targetProxy = 23E6956C1B5DEB1B007F6A9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23E6953F1B5D21E1007F6A9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23E695401B5D21E1007F6A9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23E695441B5D21E1007F6A9F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23E695451B5D21E1007F6A9F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23E695531B5D21E1007F6A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23E695541B5D21E1007F6A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23E695561B5D21E1007F6A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = wormhole/wormhole.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = wormhole/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		23E695571B5D21E1007F6A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = wormhole/wormhole.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = wormhole/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		23E695591B5D21E1007F6A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = wormholeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wormhole.app/wormhole";
+			};
+			name = Debug;
+		};
+		23E6955A1B5D21E1007F6A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = wormholeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wormhole.app/wormhole";
+			};
+			name = Release;
+		};
+		23E695701B5DEB1B007F6A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = wormToday/wormToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = wormToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		23E695711B5DEB1B007F6A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = wormToday/wormToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = wormToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23E6952D1B5D21E1007F6A9F /* Build configuration list for PBXProject "wormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E695531B5D21E1007F6A9F /* Debug */,
+				23E695541B5D21E1007F6A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23E695551B5D21E1007F6A9F /* Build configuration list for PBXNativeTarget "wormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E695561B5D21E1007F6A9F /* Debug */,
+				23E695571B5D21E1007F6A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		23E695581B5D21E1007F6A9F /* Build configuration list for PBXNativeTarget "wormholeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E695591B5D21E1007F6A9F /* Debug */,
+				23E6955A1B5D21E1007F6A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		23E6956F1B5DEB1B007F6A9F /* Build configuration list for PBXNativeTarget "wormToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E695701B5DEB1B007F6A9F /* Debug */,
+				23E695711B5DEB1B007F6A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23E6952A1B5D21E1007F6A9F /* Project object */;
+}
